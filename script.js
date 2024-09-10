@@ -17,19 +17,19 @@ function fatorar() {
         resultado *= i;
         expressao += i;
         if (i > 1) {
-            expressao += " X "; // Adiciona " X " entre os números
+            expressao += " X "; 
         }
     }
 
     // Criar a section dinamicamente
     let section = document.getElementById('res');
 
-    // Se já existir uma section com id=res, remove para criar uma nova
+    // Se já existir uma section, remove para criar uma nova
     if (section) {
         section.remove();
     }
 
-    // Cria uma nova section com id=res
+    // Cria uma nova section 
     section = document.createElement("section");
     section.id = "res";
 
